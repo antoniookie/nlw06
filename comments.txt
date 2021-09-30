@@ -1,0 +1,51 @@
+/**
+ * Well, here comes a simple description for all we did so far:
+ * First of all, we created a folder called nlwValoriza and in terminal, we typed yarn init -y, to create package.json and its modules
+ * Then, we added, with yarn, typescript dependency, with yarn add typescript -D (this d to set it as Development only)
+ * We wrote a simple TS project, using functions and interfaces and used yarn tsc --init, which created new packages and transpiled Typescript code into javascript
+ * to be understood by Chromium.
+ *
+ * Then, with node index.js (which was created with yarn tsc --init), we ran the transpiled code
+ *
+ * After this, we added express dependency, which allow us to create an api and its requests with yarn add express
+ *
+ * Because of intellisense, we added a new dependency, to help us with autocomplete, which was yarn add @types/express -d
+ *
+ * Then, we deleted all indexes files, and created a folder called src, and a file called server.ts
+ *
+ * Because every single time we ran yarn tsc, it created a copy of our code in js, we added a new dependency, with yarn add ts-node-dev -D
+ *
+ * This dependency was activated in package.json, adding "scripts": dev etc etc etc, which allow us to simply run with yarn dev.
+ *
+ *
+ *
+ */
+
+//@types/express to show intellisense
+
+//metodos HTTP
+/**
+ * GET => Search for any data
+ * POST => Insert anything
+ * PUT => Edit any info
+ * DELETE => Delete something
+ * PATCH => Edit just one specific info
+ */
+
+/**
+ * Route Params => http://localhost:3001/produtos/<id>
+ * Query Params => http://localhost:3001/produtos?name=teclado&price=339
+ * Body Params => {
+ * "name": "Teclado",
+ * "price": 199.98,
+ * "description": "Teclado bom"} => utilizado apenas para POST, PUT, GET.
+ */
+
+//select which port we goin use localhost:3000
+
+First of all, lets recap what we did today:
+
+We created our database in sqlite via migration, using the class migration:create. With this, it created a file in migrations which has a lot of numbers. Then, we wrote in it which collumns we wanted and the 
+type of data that it uses.
+
+Then, we created the object that is going to be used in this API. In entities, 
